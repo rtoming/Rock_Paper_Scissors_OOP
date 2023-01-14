@@ -40,11 +40,11 @@ class Game {
         String getResult(String user, String computer) {
             if (user.equals(computer)) {
                 return "draw";
-            } else if (user.equals("rock") || computer.equals("scissors")) {
+            } else if (user.equals("rock") && computer.equals("scissors")) {
                 return "win";
-            } else if (user.equals("paper") || computer.equals("rock")) {
+            } else if (user.equals("paper") && computer.equals("rock")) {
                 return "win";
-            } else if (user.equals("scissors") || computer.equals("paper")) {
+            } else if (user.equals("scissors") && computer.equals("paper")) {
                 return "win";
             } else {
                 return "loose!";
